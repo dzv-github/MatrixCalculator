@@ -10,17 +10,11 @@ class Matrix:
         return abs(a-b)<=max(rel_tol*max((abs(a),abs(b))),abs_tol)
 
     def __IntSwap(self,a,b):
-        tmp=a
-        a=b
-        b=tmp
-        return a,b
+        return b,a
 
 
     def rawSwap(self,RawA,RawB):
-        tmpMatrix=RawA
-        RawA=RawB
-        RawB=tmpMatrix
-        return RawA,RawB
+        return RawB,RawA
 
     def Det(self,targetMatrix):
         if len(targetMatrix)!=len(targetMatrix[0]):
