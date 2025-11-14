@@ -40,6 +40,15 @@ class Matrix:
 
 
     def Multiply(self, matrixA, matrixB):
+        if isinstance(matrixA,(int,float))or isinstance(matrixB,(int,float)):
+            if isinstance(matrixA,(int,float)) and isinstance(matrixB,(int,float)):
+                return matrixA*matrixB
+            else:
+                if isinstance(matrixA,(int,float)):
+                    return [[i*matrixA for i in j]for j in matrixB]
+                else:
+                    return [[i*matrixB for i in j]for j in matrixA]
+            
         if len(matrixA[0])!=len(matrixB):
             raise Exception("MULTIPLY: MULTIPLY DIMENSION MISMATCH")
         
@@ -216,6 +225,6 @@ class Matrix:
             return [[x] for x in xmatrix]
         
         except SystemExit:
-            raise # Multiply 또는 LU 실패 오류 전파
+            raise 
         except:
             raise Exception("EQUATIONSOL: ERROR")
