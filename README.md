@@ -1,14 +1,14 @@
 # MatrixCalculator
 
-identity_matrix(size): create size \\times size identity matrix and return result as lists in list  
+identity_matrix(size): create $size \\times size$ identity matrix and return result as lists in list  
   
-zero_matrix(row,column): create row \\times column zero matrix and return result as lists in list  
+zero_matrix(row,column): create $row \\times column$ zero matrix and return result as lists in list  
   
 determinant(target_matrix): calculate det(target_matrix) and return as int or float  
   
 transpose(target_matrix): create transposed matrix and return as lists in list  
   
-multiply(matrix_a,matrix_b): calculate matrix_a \\times matrix_b and return as lists in list  
+multiply(matrix_a,matrix_b): calculate $matrix_a \\times matrix_b$ and return as lists in list  
   
 add(matrix_a,matrix_b): calculate matrix_a + matrix_b and return as lists in list  
   
