@@ -1,8 +1,11 @@
 # MatrixCalculator
 
-## test result:
- ..........
-----------------------------------------------------------------------
-Ran 10 tests in 0.002s
-
-OK
+identity_matrix(size): create size*size identity matrix and return result as lists in list
+zero_matrix(row,column): make row*column zero matrix and return result as lists in list
+determinant(target_matrix): calculate det(target_matrix) and return as int or float
+transpose(target_matrix): make transposed matrix and return as lists in list
+multiply(matrix_a,matrix_b): calculate matrix_a \times matrix_b and return as lists in list
+add(matrix_a,matrix_b): calculate matrix_a + matrix_b and return as lists in list
+inverse(inp_matrix): make inverse matrix and return as lists in list
+lu_decomposition(inp_matrix, include_permutation_count=False, PLU=True): do LU decomposition and return l_matrix and u_matrix as lists in list. if PLU is true, do PLU decomposition and return p_matrix as lists in list in addition. if include_permutation_count is true, return number of row substitutions at pivoting as int in addition
+solve_system(coefficient_matrix, constant_matrix, least_square=True): solve the coefficient_matrix * [[x]] = constant_matrix equation and return solution of it as lists in list. but if solution is infinity or non, return as string. if least_square is true, do least squares method and return a result of it as lists of list instead of return as string sometimes.
