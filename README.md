@@ -10,7 +10,7 @@ transpose(target_matrix): create transposed matrix and return as lists in list
   
 multiply(matrix_a,matrix_b): calculate $matrix \\_ a \\times matrix \\_ b$ and return as lists in list  
   
-add(matrix_a,matrix_b): calculate $matrix \\_a + matrix \\_ b$ and return as lists in list  
+add(matrix_a,matrix_b): calculate $matrix \\_ a + matrix \\_ b$ and return as lists in list  
   
 inverse(inp_matrix): create inverse matrix and return as lists in list  
   
